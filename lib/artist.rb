@@ -34,7 +34,7 @@ class Artist
   
   def print_songs
     Song.all.select {|song| 
-      if song
+      if song.artist == self
     }
   end
   
