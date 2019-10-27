@@ -15,7 +15,7 @@ class Song
   
   def artist=(artist)
     @artist = artist
-    artist.songs << self
+    artist.songs << self unless artist.songs.include?(self)
   end
   
 end
