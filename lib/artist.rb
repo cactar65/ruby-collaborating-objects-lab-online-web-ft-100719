@@ -36,6 +36,7 @@ class Artist
     Song.all.select {|song| 
       if song.artist == self
         puts song.name
+      end
     }
   end
   
