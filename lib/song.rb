@@ -18,4 +18,8 @@ class Song
     artist.songs << self unless artist.songs.include?(self)
   end
   
+  def self.new_by_filename(filename)
+    
+  end
+  
 end
